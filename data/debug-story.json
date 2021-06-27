@@ -1,0 +1,83 @@
+{
+    "id": "debug-story",
+    "meta": {
+        "baseurl": "."
+    },
+    "storydata": [
+        {
+            "type": "SET_TIME",
+            "time": "2020-12-31T23:59:50"
+        },
+        {
+            "type": "SET_BACKGROUND",
+            "src": "{baseurl}/images/mountain.jpg",
+            "black": 0.2
+        },
+        {
+            "type": "SET_PEOPLE",
+            "id": "jessica",
+            "name": "Jessica :musical_note:",
+            "profilePicture": "{baseurl}/images/woman-in-white-blazer-small.jpg",
+            "lastOnline": "2020-12-31T23:58:59",
+            "isOnline": true
+        },
+        {
+            "type":"DISPLAY_PAGE_SIMULATION"
+        },
+        {
+            "type": "OPEN_CHATROOM",
+            "peopleId": "jessica"
+        },
+        {
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "Selamat tahun baru juga Jeno! Semoga tahun ini apa yang kamu impikan juga tercapai :) Stay healthy stay safe ya"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"jessica",
+            "tag": "qj-1",
+            "options":[
+                {
+                    "message":"hello pilihan 1",
+                    "next":"opt1"
+                },
+                {
+                    "message":"hello pilihan 2",
+                    "next":"opt2"
+                }
+            ]
+        },
+        {
+            "type": "GOTO",
+            "next": "pause"
+        },
+        {
+            "tag": "opt1",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "Iya iya kamu milih opsi 1"
+            ]
+        },
+        {
+            "type": "GOTO",
+            "next": "end"
+        },
+        {
+            "tag": "opt2",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "Kamu milih opsi 2"
+            ]
+        },
+        {
+            "tag": "end",
+            "type": "WAIT",
+            "time": 0
+        }
+    ]
+}
