@@ -6,7 +6,7 @@
     "storydata": [
         {
             "type": "SET_TIME",
-            "time": "2020-12-31T23:59:50"
+            "time": "2021-06-29T19:24:50"
         },
         {
             "type": "SET_BACKGROUND",
@@ -29,49 +29,174 @@
             "peopleId": "jessica"
         },
         {
+
             "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
             "id": "jessica",
             "messages": [
-                "Selamat tahun baru juga Jeno! Semoga tahun ini apa yang kamu impikan juga tercapai :) Stay healthy stay safe ya"
+                "Oyyy",
+                "Kemarin kamu kan minta dikenalin ama orang kan",
+                "ada nih temenku 2 orang",
+                "kamu mau aku kenalin sama yang cewe apa cowo??"
             ]
         },
         {
             "type": "ADD_MESSAGE_OPTIONS",
             "id":"jessica",
-            "tag": "qj-1",
+            "tag": "q1",
             "options":[
                 {
-                    "message":"hello pilihan 1",
-                    "next":"opt1"
+                    "message":"sama yang cewe dong",
+                    "next":"o1-a"
                 },
                 {
-                    "message":"hello pilihan 2",
-                    "next":"opt2"
+                    "message":"yang cowo boleh :)",
+                    "next":"o1-b"
                 }
             ]
         },
         {
-            "type": "GOTO",
-            "next": "pause"
-        },
-        {
-            "tag": "opt1",
+            "tag":"o1-b",
             "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
             "id": "jessica",
             "messages": [
-                "Iya iya kamu milih opsi 1"
+                "nih aku kasih fotonya",
+                "cakep banget"
             ]
         },
         {
-            "type": "GOTO",
-            "next": "end"
+            "tag":"img",
+            "type": "SEND_IMAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "imageURL": "{baseurl}/images/v.jpg"
         },
         {
-            "tag": "opt2",
+            "type":"GOTO",
+            "next":"p1"
+        },
+        {
+            "tag":"o1-a",
             "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
             "id": "jessica",
             "messages": [
-                "Kamu milih opsi 2"
+                "nih aku kasih fotonya",
+                "cakep banget"
+            ]
+        },
+        {
+            "type": "SEND_IMAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "imageURL": "{baseurl}/images/suzy.jpg"
+        },
+        {
+            "tag":"p1",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "gimana gimana?"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"jessica",
+            "tag": "q2",
+            "options":[
+                {
+                    "message":"wah cakep ya :heart:",
+                    "next":"o2-a"
+                },
+                {
+                    "message":"biasa aja sih",
+                    "next":"o2-b"
+                }
+            ]
+        },
+        {
+            "tag":"o2-a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "iyalah cakep banget :heart::heart::heart:",
+                "temen gue ini"
+            ]
+        },
+        {
+            "type":"GOTO",
+            "next":"q3"
+        },
+        {
+            "tag":"o2-b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "yang begini dibilang biasa?",
+                "ya ampun"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"jessica",
+            "tag": "q3",
+            "options":[
+                {
+                    "message":"ini anak mana sih?",
+                    "next":"o3-a"
+                }
+            ]
+        },
+        {
+            "tag":"o3-a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "anak jaksel"
+            ]
+        },
+        {
+            "type": "WAIT",
+            "time": 1000
+        },
+        {
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "kayaknya kamu ga cocok sih tapi",
+                "bye"
+            ]
+        },
+        {
+            "type": "SET_PEOPLE",
+            "id": "jessica",
+            "isOnline": false
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"jessica",
+            "tag": "q4",
+            "options":[
+                {
+                    "message":"woyyyy",
+                    "next":"o4-a"
+                },
+                {
+                    "message":"sini lu",
+                    "next":"o4-a"
+                }
+            ]
+        },
+        {
+            "tag":"o4-a",
+            "type": "WAIT",
+            "time": 4000
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"jessica",
+            "tag": "q5",
+            "options":[
+                {
+                    "message":"bangke ga di read",
+                    "next":"end"
+                }
             ]
         },
         {
