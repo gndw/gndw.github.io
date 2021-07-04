@@ -1,0 +1,944 @@
+{
+    "id": "tata",
+    "meta": {
+        "baseurl": "."
+    },
+    "storydata": [
+        {
+            "type": "SET_TIME"
+        },
+        {
+            "type": "SET_BACKGROUND",
+            "src": "https://www.bt21.com/content/201712/20171123_arrival.jpg",
+            "black": 0.6
+        },
+        {
+            "type": "SET_PEOPLE",
+            "id": "tata",
+            "name": "Tata :star2:",
+            "profilePicture": "https://www.minews.id/wp-content/uploads/2019/12/V-BTS.jpg",
+            "isOnline": true
+        },
+        {
+            "type":"DISPLAY_PAGE_SIMULATION"
+        },
+        {
+            "type": "OPEN_CHATROOM",
+            "peopleId": "tata"
+        },
+        {
+            "tag":"start",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "P",
+                "P",
+                "P",
+                "P"
+            ]
+        },
+        {
+            "tag":"start",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "Ini nomornya Fira kan?",
+                "ini aku Tata"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q1",
+            "options":[
+                {
+                    "message":"iya ini Fira! kenapa Ta tiba-tiba WA?",
+                    "next":"oq1a"
+                },
+                {
+                    "message":"sorry ini bukan Fira. kayaknya salah sambung",
+                    "next":"oq1c"
+                },
+                {
+                    "message":"salah sambung woyy",
+                    "next":"oq1b"
+                }
+            ]
+        },
+        {
+            "tag":"oq1c",
+            "type": "ADD_STORY_DATA",
+            "key":"score",
+            "value":1
+        },
+        {
+            "type": "GOTO",
+            "next": "oq1b"
+        },
+        {
+            "tag":"oq1a",
+            "type": "ADD_STORY_DATA",
+            "key":"score",
+            "value":1
+        },
+        {
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "Aku dah sampe nih di cafe",
+                "kamu dimana?",
+                "cepetan kesini"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q2",
+            "options":[
+                {
+                    "message":"bohong ih. buktiin kalau udah sampe",
+                    "next":"oq2a"
+                },
+                {
+                    "message":"bentaran aku masih otw. kita janjian dimana sih? aku lupa",
+                    "next":"oq2b"
+                }
+            ]
+        },
+        {
+            "tag": "oq2a",
+            "type": "WAIT",
+            "time": 0
+        },
+        {
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "yaelah"
+            ]
+        },
+        {
+            "type": "ADD_STORY_DATA",
+            "key":"score",
+            "value":1
+        },
+        {
+            "type": "SEND_IMAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "imageURL": "https://www.pinkvilla.com/files/styles/gallery-section/public/from_going_shirtless_to_4_am_selfie_with_jimin_bts_v_aka_taehyungs_irresistible_selcas_of_2020_so_far_1.jpg?itok=2dU7nwb4"
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q3",
+            "options":[
+                {
+                    "message":"wkwk :laughing::laughing::laughing:",
+                    "next":"oq3a"
+                },
+                {
+                    "message":"yaelah Tata! foto cafenya lah jangan selfie",
+                    "next":"oq3a"
+                }
+            ]
+        },
+        {
+            "tag":"oq3a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "wkwkwk",
+                "aku udah sampe pokoknya",
+                "cepetan kesini"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q4",
+            "options":[
+                {
+                    "message":"ngomong2 kok kamu makin ganteng sih",
+                    "next":"oq4a"
+                },
+                {
+                    "message":"jangan suka kirim selfie, menuhin memori hape aku",
+                    "next":"oq4b"
+                }
+            ]
+        },
+        {
+            "tag":"oq4b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "nih aku kasih lagi, mumpung sedang ganteng"
+            ]
+        },
+        {
+            "type": "ADD_STORY_DATA",
+            "key":"score",
+            "value":1
+        },
+        {
+            "type": "SEND_IMAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "imageURL": "https://cdn.idntimes.com/content-images/community/2020/10/fromandroid-dc242b64ff72692c56bf1e4eb44ff0b4.jpg"
+        },
+        {
+            "type": "GOTO",
+            "next": "q5"
+        },
+        {
+            "tag":"oq4a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "apaan sih lu gajelas banget",
+                "dari dulu gue ganteng"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q5",
+            "options":[
+                {
+                    "message":"iya deh percaya yang ganteng",
+                    "next":"oq5a"
+                },
+                {
+                    "message":":pensive::pensive::pensive:",
+                    "next":"oq5a"
+                }
+            ]
+        },
+        {
+            "tag":"oq5a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "eh tapi kok ini kayak bukan Fira sih dari kata-katanya?"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q6",
+            "options":[
+                {
+                    "message":"ini aku Fira",
+                    "next":"oq6a"
+                },
+                {
+                    "message":"hahaha iya ini bukan Fira",
+                    "next":"oq6b"
+                }
+            ]
+        },
+        {
+            "tag":"oq6a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "kalau gitu coba buktikan",
+                "apa makanan kesukaan Fira?"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q7",
+            "options":[
+                {
+                    "message":"Bakso",
+                    "next":"oq7a"
+                },
+                {
+                    "message":"Mie ayam",
+                    "next":"oq7a"
+                },
+                {
+                    "message":"Seblak",
+                    "next":"oq7a"
+                },
+                {
+                    "message":"Indomie",
+                    "next":"oq7a"
+                },
+                {
+                    "message":"Kimchi",
+                    "next":"oq7b"
+                }
+            ]
+        },
+        {
+            "tag":"oq7b",
+            "type": "ADD_STORY_DATA",
+            "key":"tebak",
+            "value":1
+        },
+        {
+            "tag":"oq7a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "apa minuman kesukaan Fira?"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q8",
+            "options":[
+                {
+                    "message":"Es teh tawar",
+                    "next":"oq8a"
+                },
+                {
+                    "message":"Kuah ramyun",
+                    "next":"oq8b"
+                },
+                {
+                    "message":"Es doger",
+                    "next":"oq8a"
+                },
+                {
+                    "message":"Kopi",
+                    "next":"oq8a"
+                }
+            ]
+        },
+        {
+            "tag":"oq8b",
+            "type": "BRANCH",
+            "options": [
+                {
+                    "key":"tebak",
+                    "comparator":"=",
+                    "value":1,
+                    "next":"foodguess1"
+                },
+                {
+                    "key":"tebak",
+                    "comparator":"<",
+                    "value":1,
+                    "next":"oq8a"
+                }
+            ]
+        },
+        {
+            "tag":"foodguess1",
+            "type": "ADD_STORY_DATA",
+            "key":"score",
+            "value":1
+        },
+        {
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "kok bisa bener sih?",
+                "tapi ngaku ajadeh, soalnya Fira barusan bilang kalau dia gak bisa dateng~~"
+            ]
+        },
+        {
+            "type": "GOTO",
+            "next": "q9"
+        },
+        {
+            "tag":"oq8a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "wkwk asal nebak ya?",
+                "ngaku ajadeh, soalnya Fira barusan bilang kalau dia gak bisa dateng~~"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q9",
+            "options":[
+                {
+                    "message":"Hahaha iya sorry ini bukan Fira",
+                    "next":"endOfPhase1"
+                }
+            ]
+        },
+        {
+            "tag":"oq2b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "di ARMY Cafe yang deket sekolah",
+                "eh kamu lupa tempat kok udah otw?",
+                "bohonggg yaa"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q10",
+            "options":[
+                {
+                    "message":"hahaha aduh ketauan",
+                    "next":"q11"
+                }
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q11",
+            "options":[
+                {
+                    "message":"sorry ini bukan Fira. kayaknya salah sambung",
+                    "next":"oq1b"
+                }
+            ]
+        },
+        {
+            "tag":"oq6b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "wah maaf ya kayaknya aku salah nomor"
+            ]
+        },
+        {
+            "type": "GOTO",
+            "next": "q12"
+        },
+        {
+            "tag":"oq1b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "eh sorry kirain ini nomornya Fira"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q12",
+            "options":[
+                {
+                    "message":"nggak papa kok",
+                    "next":"endOfPhase1"
+                }
+            ]
+        },
+        {
+            "tag":"endOfPhase1",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "hahaha :laughing::laughing::laughing:",
+                "kalau gitu sekalian kenalin aja, nama aku Tata"
+            ]
+        },
+        {
+            "tag":"startOfPhase2",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "salam kenal!"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q13",
+            "options":[
+                {
+                    "message":"halo Tata! salam kenal juga",
+                    "next":"q14"
+                },
+                {
+                    "message":"apaan sih lo",
+                    "next":"oq13b"
+                }
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q14",
+            "options":[
+                {
+                    "message":"aku pernah lihat fotomu!",
+                    "next":"oq14a"
+                },
+                {
+                    "message":"kok dari fotomu kayaknya aku pernah lihat deh",
+                    "next":"oq14a"
+                }
+            ]
+        },
+        {
+            "tag":"oq14a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "ah emang iya?",
+                "dimana?"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q15",
+            "options":[
+                {
+                    "message":"di mimpi aku :)",
+                    "next":"oq15a"
+                },
+                {
+                    "message":"aku lupa dimana ya?",
+                    "next":"oq15b"
+                }
+            ]
+        },
+        {
+            "tag":"oq15b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "kayaknya kita belum pernah ketemu deh"
+            ]
+        },
+        {
+            "type": "GOTO",
+            "next": "oq16a"
+        },
+        {
+            "tag":"oq15a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "wkwkwkwk :laughing::laughing::laughing::laughing:",
+                "Apaan sih aku ketawa kenceng banget",
+                "kamu jago gombal ya"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q16",
+            "options":[
+                {
+                    "message":"lumayan jago sih hihihi",
+                    "next":"oq16a"
+                },
+                {
+                    "message":"enggak kok hehe",
+                    "next":"oq16a"
+                }
+            ]
+        },
+        {
+            "tag":"oq16a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "biar seru gimana kalau kita main tebak-tebakan?",
+                "nanti kita gantian nebak satu sama lain gitu"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q17",
+            "options":[
+                {
+                    "message":"ayok boleh",
+                    "next":"oq17a"
+                },
+                {
+                    "message":"gamau ah males",
+                    "next":"oq17b"
+                }
+            ]
+        },
+        {
+            "tag":"oq17a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "dari aku duluan yaa",
+                "aku tebak kamu lebih suka ayam goreng daripada bakso"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q18",
+            "options":[
+                {
+                    "message":"iyaa aku lebih suka ayam goreng :smile::smile::smile:",
+                    "next":"oq18a"
+                },
+                {
+                    "message":"aku lebih suka bakso :relieved::relieved::relieved:",
+                    "next":"oq18b"
+                },
+                {
+                    "message":"gak suka dua dua nya :worried::worried::worried:",
+                    "next":"oq18b"
+                }
+            ]
+        },
+        {
+            "tag":"oq18b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "wah aku salah :("
+            ]
+        },
+        {
+            "type": "GOTO",
+            "next": "q18fu"
+        },
+        {
+            "tag":"oq18a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "yeaaay aku beneeer :smiley::smiley::smiley:"
+            ]
+        },
+        {
+            "tag":"q18fu",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "giliran kamuu"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q19",
+            "options":[
+                {
+                    "message":"aku tebak kamu lebih suka mie kentang daripada kacang merah",
+                    "next":"oq19a"
+                },
+                {
+                    "message":"aku tebak kamu lebih suka kacang merah daripada mie kentang",
+                    "next":"oq19b"
+                }
+            ]
+        },
+        {
+            "tag":"oq19a",
+            "type": "ADD_STORY_DATA",
+            "key":"score",
+            "value":1
+        },
+        {
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "waaaaaa iya aku suka banget mie kentang!",
+                "kok bisa tau wkwkwk"
+            ]
+        }, 
+        {
+            "type": "GOTO",
+            "next": "q19fu"
+        },
+        {
+            "tag":"oq19b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "hmmm aku nggak suka kacang merah :(",
+                "wkwkwk"
+            ]
+        },
+        {
+            "tag":"q19fu",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "giliranku yaa",
+                "kamu pasti suka lagu-lagunya BTS!"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q20",
+            "options":[
+                {
+                    "message":"suka pake banget! aku suka lagu-lagu BTS :sob::sob::sob:",
+                    "next":"q21"
+                },
+                {
+                    "message":"aku gak suka bts",
+                    "next":"oq20b"
+                }
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q21",
+            "options":[
+                {
+                    "message":"kamu pasti suka lagu Butter by BTS!",
+                    "next":"oq21a"
+                },
+                {
+                    "message":"kamu pasti suka lagu Seperti Mati Lampu by Nassar!",
+                    "next":"oq21b"
+                }
+            ]
+        },
+        {
+            "tag":"oq21a",
+            "type": "ADD_STORY_DATA",
+            "key":"score",
+            "value":1
+        },
+        {
+            "tag":"oq21b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "iya aku suka bangeeeet! :sob::sob::sob::sob:",
+                "anyway kamu orangnya asik banget yaaa"
+            ]
+        },
+        {
+            "type": "BRANCH",
+            "options": [
+                {
+                    "key":"score",
+                    "comparator":">=",
+                    "value":6,
+                    "next":"true-ending"
+                },
+                {
+                    "key":"score",
+                    "comparator":"<",
+                    "value":6,
+                    "next":"friend-ending"
+                }
+            ]
+        },
+        {
+            "tag":"true-ending",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "eh besok ketemuan yuk. mau nggak?"
+            ]
+        },
+        {
+            "type": "SEND_IMAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "imageURL": "https://www.pngfind.com/pngs/m/234-2349960_taehyung-v-bts-derp-beanie-pink-cute-btsmeme.png"
+        },
+        {
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "pleaseee :wink::wink::wink:"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q22",
+            "options":[
+                {
+                    "message":"hayuuuk",
+                    "next":"oq22a"
+                },
+                {
+                    "message":"mmm ok",
+                    "next":"oq22a"
+                }
+            ]
+        },
+        {
+            "tag":"oq22a",
+            "type": "SEND_IMAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "imageURL": "https://64.media.tumblr.com/3f68e3933c0a1f11d768bcc63a8689d8/a084568455ce8875-6f/s1280x1920/1be06d583507785f7ad07c5139b55ce96f7d04ac.jpg"
+        },
+        {
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "yeaaaaaaaah",
+                "see u tomorrow :sparkling_heart::sparkling_heart::sparkling_heart::sparkling_heart::sparkling_heart:"
+            ]
+        },
+        {
+            "type": "GOTO",
+            "next": "end"
+        },
+        {
+            "tag":"friend-ending",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "gimana kalau hari ini kita jadi temen? :blush:"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q23",
+            "options":[
+                {
+                    "message":"yes! hari ini kita jadi temen yaa :blush:",
+                    "next":"oq23a"
+                },
+                {
+                    "message":"mmm ok",
+                    "next":"oq23a"
+                }
+            ]
+        },
+        {
+            "tag":"oq23a",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "ok",
+                "kapan2 kita ngobrol lagi yaaaa",
+                "byeeee"
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q23+",
+            "options":[
+                {
+                    "message":"ok :blush:",
+                    "next":"end"
+                }
+            ]
+        },
+        {
+            "tag":"oq17b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "ya maap :("
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q24",
+            "options":[
+                {
+                    "message":"hahaha becanda wey",
+                    "next":"oq24a"
+                }
+            ]
+        },
+        {
+            "tag": "oq24a",
+            "type": "WAIT",
+            "time": 3000
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q25",
+            "options":[
+                {
+                    "message":"yah diread doang?",
+                    "next":"q25fu"
+                }
+            ]
+        },
+        {
+            "tag":"q25fu",
+            "type": "SET_PEOPLE",
+            "id": "tata",
+            "isOnline": false
+        },
+        {
+            "type": "WAIT",
+            "time": 3000
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q25+",
+            "options":[
+                {
+                    "message":"hey...",
+                    "next":"end"
+                }
+            ]
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q25",
+            "options":[
+                {
+                    "message":"yah diread doang?",
+                    "next":"end"
+                }
+            ]
+        },
+        {
+            "tag":"oq20b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                ":scream::scream::scream::scream::scream:",
+                "kalau gitu pertemanan kita sampai sini aja :cry:"
+            ]
+        },
+        {
+            "type": "GOTO",
+            "next": "q24"
+        },
+        {
+            "tag":"oq13b",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "tata",
+            "messages": [
+                "galak banget deh"
+            ]
+        },
+        {
+            "type": "SET_PEOPLE",
+            "id": "tata",
+            "isBlockingMe": true
+        },
+        {
+            "tag": "oq24a",
+            "type": "WAIT",
+            "time": 3000
+        },
+        {
+            "type": "ADD_MESSAGE_OPTIONS",
+            "id":"tata",
+            "tag": "q26",
+            "options":[
+                {
+                    "message":"aku diblock?",
+                    "next":"end"
+                }
+            ]
+        },
+        {
+            "tag": "end",
+            "type": "WAIT",
+            "time": 0
+        }
+    ]
+}

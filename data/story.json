@@ -1,6 +1,11 @@
 [
     {
         "id": "debug",
-        "src": "/data/debug-story.json"
+        "src": "/data/debug-story.json",
+        "hide": true
+    },
+    {
+        "id": "tata",
+        "src": "/data/tata.json"
     }
 ]

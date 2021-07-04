@@ -29,7 +29,7 @@
             "peopleId": "jessica"
         },
         {
-
+            "tag":"start",
             "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
             "id": "jessica",
             "messages": [
@@ -70,6 +70,10 @@
             "imageURL": "{baseurl}/images/v.jpg"
         },
         {
+            "type": "ADD_STORY_DATA",
+            "key":"cowo"
+        },
+        {
             "type":"GOTO",
             "next":"p1"
         },
@@ -88,11 +92,52 @@
             "imageURL": "{baseurl}/images/suzy.jpg"
         },
         {
+            "type": "ADD_STORY_DATA",
+            "key":"cewe"
+        },
+        {
             "tag":"p1",
             "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
             "id": "jessica",
             "messages": [
                 "gimana gimana?"
+            ]
+        },
+        {
+            "type": "BRANCH",
+            "options": [
+                {
+                    "key":"cowo",
+                    "comparator":"=",
+                    "value":1,
+                    "next":"cowo1"
+                },
+                {
+                    "key":"cewe",
+                    "comparator":"=",
+                    "value":1,
+                    "next":"cewe1"
+                }
+            ]
+        },
+        {
+            "tag":"cowo1",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "cowoknya"
+            ]
+        },
+        {
+            "type":"GOTO",
+            "next":"q2"
+        },
+        {
+            "tag":"cewe1",
+            "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
+            "id": "jessica",
+            "messages": [
+                "ceweknya"
             ]
         },
         {
@@ -156,6 +201,7 @@
             "time": 1000
         },
         {
+            "tag":"tete",
             "type": "SEND_MESSAGE_FROM_PEOPLE_TO_ME",
             "id": "jessica",
             "messages": [
@@ -166,7 +212,7 @@
         {
             "type": "SET_PEOPLE",
             "id": "jessica",
-            "isOnline": false
+            "isBlockingMe": true
         },
         {
             "type": "ADD_MESSAGE_OPTIONS",
